@@ -1,0 +1,22 @@
+# --- backend (FastAPI + agentic RAG) ---
+fastapi==0.141.1
+uvicorn==0.52.4
+pydantic==2.13.5
+python-dotenv==1.2.2
+requests==2.33.1
+
+# LangChain — pinned deliberately. As of LangChain 1.x, create_react_agent /
+# AgentExecutor live in langchain_classic, not langchain.agents.
+langchain==1.2.13
+langchain-core==1.2.23
+langchain-classic==1.0.3
+langchain-text-splitters==1.1.1
+langchain-google-genai==4.2.1   # chat LLM: Gemini
+langchain-groq==1.1.2           # compaction/summarization LLM only
+
+qdrant-client==1.19.0
+firecrawl-py==4.42.0
+tavily-python==0.8.1
+
+# --- frontend (Streamlit) ---
+streamlit==1.63.0

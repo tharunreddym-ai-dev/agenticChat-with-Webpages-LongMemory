@@ -1,0 +1,25 @@
+# --- secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# --- local data: SQLite db + on-disk Qdrant storage ---
+# Anchored to the repo root so it targets the actual ./data directory and
+# NOT the db/ Python package (a bare "db/" pattern would wrongly match that).
+/data/*
+!/data/.gitkeep
+
+# --- editor/OS cruft ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- streamlit ---
+.streamlit/secrets.toml
